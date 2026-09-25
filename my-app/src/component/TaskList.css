@@ -1,0 +1,66 @@
+/* کادر سرچ */
+.search-box {
+  margin-bottom: 15px;
+}
+
+.search-box input {
+  width: 100%;
+  padding: 10px 14px;
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+  background-color: #f8fafc;
+  font-size: 0.9rem;
+  font-family: inherit;
+  outline: none;
+  transition: all 0.2s ease;
+}
+
+.search-box input:focus {
+  border-color: #3b82f6;
+  background-color: #ffffff;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+}
+
+/* تب‌های فیلتر */
+.filter-container {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 20px;
+  background-color: #f1f5f9;
+  padding: 5px;
+  border-radius: 10px;
+}
+
+.filter-btn {
+  flex: 1;
+  background: transparent;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 8px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #64748b;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-family: inherit;
+}
+
+.filter-btn:hover {
+  color: #1e293b;
+}
+
+.filter-btn.active {
+  background-color: #ffffff;
+  color: #3b82f6;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+/* پیام خالی بودن لیست */
+.empty-message {
+  text-align: center;
+  color: #94a3b8;
+  padding: 25px 0;
+  font-size: 0.9rem;
+  font-style: italic;
+}

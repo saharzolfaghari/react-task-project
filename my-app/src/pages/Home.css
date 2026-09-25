@@ -1,0 +1,58 @@
+.home-page {
+  display: flex;
+  flex-direction: column;
+}
+
+.theme-toggle-container {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 10px;
+}
+
+.theme-toggle-btn {
+  background-color: transparent;
+  border: 1px solid #cbd5e1;
+  padding: 6px 14px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 0.85rem;
+  font-weight: 600;
+  font-family: inherit;
+  color: inherit;
+  transition: all 0.2s ease;
+}
+
+.theme-toggle-btn:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.app-header {
+  text-align: center;
+  margin-bottom: 25px;
+  border-bottom: 1px solid #f0f0f0;
+  padding-bottom: 15px;
+}
+
+.app-header h1 {
+  font-size: 1.4rem;
+  color: #1e293b;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+/* استایل‌های دارک مود برای هدر */
+body.dark-mode .theme-toggle-btn {
+  border-color: #475569;
+}
+
+body.dark-mode .theme-toggle-btn:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+body.dark-mode .app-header {
+  border-bottom-color: #334155;
+}
+
+body.dark-mode .app-header h1 {
+  color: #f1f5f9;
+}

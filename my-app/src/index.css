@@ -1,0 +1,116 @@
+@import url('https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn-font@v33.003/Vazirmatn-font-face.css');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Vazirmatn', system-ui, sans-serif;
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  color: #2d3748;
+  direction: rtl;
+  text-align: right;
+  min-height: 100vh;
+  transition: all 0.3s ease;
+}
+
+/* 🌙 دارک مود حرفه‌ای، شیک و چشم‌نواز */
+body.dark-mode {
+  background: #0f172a; /* پس‌زمینه تیره و عمیق */
+  color: #f8fafc;
+}
+
+/* باکس اصلی برنامه در دارک مود */
+body.dark-mode .main-content,
+body.dark-mode .home-page {
+  background-color: #1e293b;
+  border: 1px solid #334155;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+}
+
+/* تیترها و متن‌ها */
+body.dark-mode .app-header h1 {
+  color: #f8fafc;
+}
+
+body.dark-mode .api-quote {
+  color: #94a3b8;
+}
+
+/* آیتم‌های تسک */
+body.dark-mode .task-item {
+  background-color: #334155;
+  border-color: #475569;
+}
+
+body.dark-mode .task-item:hover {
+  border-color: #6366f1;
+}
+
+body.dark-mode .task-title {
+  color: #f1f5f9;
+}
+
+/* اینپوت‌ها (سرچ و افزودن تسک) */
+body.dark-mode .search-box input,
+body.dark-mode .task-form input {
+  background-color: #0f172a;
+  border-color: #475569;
+  color: #f8fafc;
+}
+
+body.dark-mode .search-box input:focus,
+body.dark-mode .task-form input:focus {
+  border-color: #6366f1;
+  box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.2);
+}
+
+/* تب‌های فیلتر */
+body.dark-mode .filter-container {
+  background-color: #0f172a;
+}
+
+body.dark-mode .filter-btn {
+  color: #94a3b8;
+}
+
+body.dark-mode .filter-btn.active {
+  background-color: #6366f1; /* بنفش جذاب برای تب فعال */
+  color: #ffffff;
+}
+
+/* دکمه‌های ویرایش و حذف در دارک مود */
+body.dark-mode .edit-btn {
+  background-color: rgba(99, 102, 241, 0.15);
+  color: #818cf8;
+  border: 1px solid rgba(99, 102, 241, 0.3);
+}
+
+body.dark-mode .edit-btn:hover {
+  background-color: #6366f1;
+  color: #ffffff;
+}
+
+body.dark-mode .delete-btn {
+  background-color: rgba(239, 68, 68, 0.15);
+  color: #fca5a5;
+  border: 1px solid rgba(239, 68, 68, 0.3);
+}
+
+body.dark-mode .delete-btn:hover {
+  background-color: #ef4444;
+  color: #ffffff;
+}
+
+/* دکمه سوئیچ تم */
+body.dark-mode .theme-toggle-btn {
+  background-color: #334155;
+  color: #f8fafc;
+  border-color: #475569;
+}
+
+body.dark-mode .theme-toggle-btn:hover {
+  background-color: #475569;
+}
